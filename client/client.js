@@ -1,3 +1,4 @@
+// comment
 this.App = {};
 this.Helpers = {};
 
