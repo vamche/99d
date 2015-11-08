@@ -1,0 +1,240 @@
+<template name="Home">
+	{{> HomeJumbotron}}{{> HomeSection1}}{{> HomeSection2}}{{> HomeSection3}}{{> HomeSectionContact}}
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<div id="page_menu" class="pull-right">
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="HomeJumbotron">
+	<div class="jumbotron " style="background-image: url('/images/jumbotron-bg.png');">
+		<div id="content" class="container">
+			<p id="jumbotron-text">
+			</p>
+			{{> HomeJumbotronContent}}
+		</div>
+	</div>
+</template>
+
+<template name="HomeJumbotronContent">
+	<h1 id="section-welcome">
+		Services at your doorstep
+	</h1>
+	<p>
+		For previous version of the website please visit 
+		<a href="http://www.99deliveries.com" target="_blank">
+			99 Deliveries
+		</a>
+		
+		
+	</p>
+	
+	<a href="#section1" class="btn btn-lg btn-warning">
+		Find out More
+	</a>
+</template>
+
+<template name="HomeSection1" id="section1">
+	<section class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContent1}}{{> HomeThreeColumns}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContent1">
+	{{#markdown}}
+<h1 id="section1">Section 1</h1>
+
+Usu ut omnium theophrastus, vis stet incorrupte ei, ad dictas dissentias ius. Vocibus tacimates duo te. Mazim impedit efficiendi nec at. Vix ferri feugiat omittantur ne, sea eu primis maiorum volumus. Nam in legere vocent appetere.
+
+Usu ne magna putant utroque, quot vidit sit ex. Sit ne corpora placerat periculis. Erant facete ut vim, mel cu iuvaret aliquam qualisque. Assum affert pro eu, impetus appareat disputando no est. Augue definitiones in vel, congue accusamus ex ius. Pro elaboraret voluptatibus ea. Sint volutpat ex quo, eam te alia ancillae.
+{{/markdown}}
+</template>
+
+<template name="HomeThreeColumns">
+	<div class="row text-center">
+		<div class="col-md-4">
+			<span class="fa-stack fa-4x">
+				<i class="fa fa-circle fa-stack-2x text-primary">
+				</i>
+				<i class="fa fa-shopping-cart fa-stack-1x fa-inverse">
+				</i>
+			</span>
+			<h4 class="service-heading">
+				Column 1
+			</h4>
+			<p class="text-muted">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+			</p>
+		</div>
+		<div class="col-md-4">
+			<span class="fa-stack fa-4x">
+				<i class="fa fa-circle fa-stack-2x text-primary">
+				</i>
+				<i class="fa fa-laptop fa-stack-1x fa-inverse">
+				</i>
+			</span>
+			<h4 class="service-heading">
+				Column 2
+			</h4>
+			<p class="text-muted">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+			</p>
+		</div>
+		<div class="col-md-4">
+			<span class="fa-stack fa-4x">
+				<i class="fa fa-circle fa-stack-2x text-primary">
+				</i>
+				<i class="fa fa-lock fa-stack-1x fa-inverse">
+				</i>
+			</span>
+			<h4 class="service-heading">
+				Column 3
+			</h4>
+			<p class="text-muted">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+			</p>
+		</div>
+	</div>
+</template>
+
+<template name="HomeSection2" id="section2">
+	<section class="bg-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContent2}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContent2">
+	{{#markdown}}
+<h1 id="section2">Section 2</h1>
+
+Lorem ipsum
+-----------
+
+Lorem ipsum dolor sit amet, per ei dicta movet ubique, vocent mandamus necessitatibus pri te. Per novum scripserit an. Id doming assentior scribentur nec, omnes persecuti cu his, vix ea ignota dissentias. Vis wisi natum epicurei an, aperiri facilis oporteat no est. Est eu diam discere.
+
+Cu duo explicari cotidieque, sit te error corpora. Sit ut summo nostro facilis, quodsi dissentiet ut his. Duo alii illud essent cu, pri te lorem saperet. Sit nulla partiendo te, cum corpora definiebas in. Id quo fabellas partiendo suavitate, nam tation invidunt sadipscing ea.
+{{/markdown}}
+</template>
+
+<template name="HomeSection3" id="section3">
+	<section class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContent3}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContent3">
+	{{#markdown}}
+<h1 id="section3">Section 3</h1>
+
+Lorem ipsum
+-----------
+
+Usu ut omnium theophrastus, vis stet incorrupte ei, ad dictas dissentias ius. Vocibus tacimates duo te. Mazim impedit efficiendi nec at. Vix ferri feugiat omittantur ne, sea eu primis maiorum volumus. Nam in legere vocent appetere.
+
+Usu ne magna putant utroque, quot vidit sit ex. Sit ne corpora placerat periculis. Erant facete ut vim, mel cu iuvaret aliquam qualisque. Assum affert pro eu, impetus appareat disputando no est. Augue definitiones in vel, congue accusamus ex ius. Pro elaboraret voluptatibus ea. Sint volutpat ex quo, eam te alia ancillae.
+{{/markdown}}
+</template>
+
+<template name="HomeSectionContact" id="section_contact">
+	<section class="bg-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12" id="content">
+					{{> HomeContentContact}}{{> HomeContact}}
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="HomeContentContact">
+	{{#markdown}}<h1 id="section-contact">Contact Us</h1>
+
+This is just example application, so this email will be sent to you.{{/markdown}}
+</template>
+
+<template name="HomeContact">
+	<div id="home-contact" class="">
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}				
+				
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-name">
+				<label for="name">
+					Your name
+				</label>
+				<div class="input-div">
+					<input type="text" name="name" value="" class="form-control" autofocus="autofocus" required="required">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-email">
+				<label for="email">
+					Your e-mail
+				</label>
+				<div class="input-div">
+					<input type="text" name="email" value="" class="form-control" required="required" data-type="email">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-message">
+				<label for="message">
+					Message
+				</label>
+				<div class="input-div">
+					<textarea class="form-control" name="message"></textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Send
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
